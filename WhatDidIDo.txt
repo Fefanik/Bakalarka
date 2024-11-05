@@ -1,0 +1,4 @@
+1. Spravil som si nový file vygenerovaný funkciou rand.
+2. Otestoval som ho na 50 bitstreamoch kde je v každom 100 000 bitov.
+3. Rozdelil som z si bity vygenerované funkciou rand na bloky kde v každom bloku je 32 bitov,
+záčal som tým že som vyberal z bloku vybrať celé bajty, pre 4. bajt som dostal extremnejšie vysledky (4.bajt v Little Endian číže to bol ten najsignifikantnejší bajt). Potom som vyberal bity z 4. bajtu a dosiahol som najextrémnejšie výsledky pri najsignifikantnejšom bite. Najsignifikantnejší bit(resp. znamienkový) je stále 0 kedže rand generuje iba kladné int.
